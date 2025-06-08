@@ -1,0 +1,16 @@
+Reglas:
+
+El sistema considera que la hora adecuada para regar si es antes de las 10 am. o despues de las 6 pm..
+
+El riego se activa automaticamente si: 
+    -la humedad del suelo es baja
+    -no se pronostica lluvia 
+    - y es una hora adecuada para regar
+
+Si el riego está activado, se registra el estado como "Activado"; si no, como "No activado".
+
+Alerta por condiciones extremas: 
+    -si la temperatura es mayor o igual a 32°C, se activa una alerta por calor extremo.
+    -si el riego se activa bajo esas condiciones, el sistema emite una recomendación:"Alerta: Riego activado con temperatura alta. Considere riego nocturno o por goteo."
+
+En caso contrario, indica: "Sin recomendaciones especiales para el riego."
